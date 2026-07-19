@@ -4,10 +4,10 @@ function AddTransactionForm({postTransaction}) {
   function submitForm(e){
     e.preventDefault()
     const newTransaction = {
-      date: e.target.date.value,
-      description: e.target.description.value,
-      category: e.target.category.value,
-      amount: e.target.amount.value
+      date: e.target.elements.date.value,
+      description: e.target.elements.description.value,
+      category: e.target.elements.category.value,
+      amount: e.target.elements.amount.value
     }
     postTransaction(newTransaction)
 
